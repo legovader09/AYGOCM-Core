@@ -5,6 +5,7 @@
     <RootNamespace>AYGOCM_Core</RootNamespace>
     <ApplicationIcon>favicon.ico</ApplicationIcon>
     <PackageId>AYGOCM</PackageId>
+    <AssemblyName>AYGOCMCore</AssemblyName>
   </PropertyGroup>
 
   <ItemGroup>
