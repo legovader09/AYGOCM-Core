@@ -1,0 +1,40 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Create";
+}
+
+<div class="cont">
+    <div id="cardDiv">
+        <img id="template" src="~/res/Current/Templates/Normal.png" width="400" height="583" />
+        <img id="cardimage" src="~/res/Current/UI/Blank.png" style="object-fit: cover" width="384" height="420" onclick="" />
+        <img id="attribField" src="~/res/Current/Attributes/JAP/Earth.png" width="44" height="44" />
+        <img id="LVLBar" src="~/res/Current/Levels/Level1.png" />
+
+        <input class="atkdeffield" id="ATKText" type="text" maxlength="5" placeholder="0" />
+        <input class="atkdeffield" id="DEFText" type="text" maxlength="5" placeholder="0" />
+    </div>
+    <div id="feats">
+        <p class="UI"><strong>Level Type</strong></p>
+        <div id="clickLevels">
+            <img id="lvl" src="~/res/Current/UI/LVL.png" alt="Normal Level" onclick="changeLVLType(0);" />
+            <img id="rank" src="~/res/Current/UI/RANK.png" alt="XYZ Level" onclick="changeLVLType(1);" />
+            <img id="neglvl" src="~/res/Current/UI/NEGLVL.png" alt="Negative Level" onclick="changeLVLType(2);" />
+        </div>
+        <div class="lvlslider">
+            <input type="range" min="1" max="13" value="1" class="slider" id="lvlSliderInput">
+            <span id="sliderLbl">1</span>
+        </div>
+    </div>
+    <div id="templates">
+
+    </div>
+</div>
+<div id="bottomBar">
+    <label class="custom-file-upload">
+        <img src="~/res/WebUI/cloud.png" width="18" height="18" />
+        <input type="file" accept="image/*" />
+        Choose Card Image
+    </label>
+    <input class="custom-file-upload" type="button" value="Clear" onclick="document.getElementById('cardimage').src='/res/Current/UI/Blank.png'" />
+</div>

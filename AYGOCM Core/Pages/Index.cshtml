@@ -1,0 +1,49 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home";
+}
+
+<div class="cont">
+    <div style="margin-right: 8px; align-content: center">
+        <img style="filter:drop-shadow(0 0 0.75rem #622d08);" src="~/res/Current/UI/YGO LOGO.png" alt="AYGOCM" width="512" height="512"/>
+    </div>
+    <div class="right-div" style="padding: 100px 16px 100px 16px;">
+        <h1>Anime Yu-Gi-Oh! Card Maker</h1>
+        <h3 style="color: #808080; margin-top: -12px;">Web Edition</h3>
+        <br/>
+        <a asp-area="" asp-page="CardMaker"><input class="UIButton" type="button" value="Start Creating"/></a>
+    </div>
+</div>
+<hr />
+<div class="main">
+    <div class="rounded-background" style="vertical-align: top; text-align: center; width: 70%; height: 100%;">
+        <h4>Welcome to AYGOCM Web Edition!</h4>
+        <span style="padding: 12px;">
+            This is the <strong>brand new</strong> homepage of the popular <strong>Anime Yu-Gi-Oh! Card Maker</strong>!
+            This time featuring a web app, that's right, no longer do you need to download an app. Though if you prefer
+            a downloaded version, you can still access the old website <a href="https://aygocm.co.uk">here.</a>
+            <br /><br />
+            At the moment, the web app only works on desktop resolutions, and potentially on tablets with a decent sized screen, there may 
+            be proper support for mobile platforms for the future, though there is no set time for this yet.
+        </span>
+    </div>
+    <div class="right-div rounded-background" style="width: 320px; padding: 12px 8px 12px 8px; background-color: #c7ffb0">
+        <h4><strong>Featured Video</strong></h4>
+        <p style="color: #646464; margin-top: -12px;">Special Thanks to <a href="https://www.youtube.com/channel/UCrn320jsOmDtiM4hM_-OZIA" target="_blank">Nostaligiacade Gaming</a>!</p>
+        <iframe width="280" height="170" src="https://www.youtube.com/embed/MdR6Iw9u5_k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <hr />
+        <h5><strong>Want to Support the Development?</strong></h5>
+        <p>If you like my work and would like to support future developments, feel free to leave a donation!</p>
+        <a href='https://ko-fi.com/Z8Z71EKU3' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://az743702.vo.msecnd.net/cdn/kofi2.png?v=2' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
+        <hr />
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+            <input type="hidden" name="cmd" value="_s-xclick" />
+            <input type="hidden" name="hosted_button_id" value="3B8T7MMSH568U" />
+            <input type="image" src="https://www.paypalobjects.com/en_US/GB/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+            <img alt="" border="0" src="https://www.paypal.com/en_GB/i/scr/pixel.gif" width="1" height="1" />
+        </form>
+        <hr />
+        <p>Alternatively, disabling Ad blockers for this website would also be a huge help, and very much appreciated!</p>
+    </div>
+</div>

@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>AYGOCM_Core</RootNamespace>
+    <ApplicationIcon>favicon.ico</ApplicationIcon>
+    <PackageId>AYGOCM</PackageId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\favicon.ico" />
+  </ItemGroup>
+
+</Project>
